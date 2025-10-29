@@ -11,6 +11,16 @@ interface IYoCoinCore {
         uint256 validityPeriod;           // Validity period in seconds
     }
 
+      /// @notice Yield source structure.
+    struct YieldSource {
+        address token;  // underlying token used by the vault
+        address vault; // address of the yield source
+        address vaultToken; // token used by the vault
+        uint256 maxCap; // maximum amount that can be deposited in the vault (interest is not included)
+        uint256 depositedAmount; // amount deposited in the vault (interest is not included)
+    }
+
+
     struct RedeemRequest {
         address collateralToken; // Address of the collateral token
         uint256 amount; // Amount of collateral token
@@ -22,11 +32,18 @@ interface IYoCoinCore {
     error NotWhitelistedToken();
     error ZeroAmount();
     error ZeroAddress();
+    error InvalidLengths();
     error CollateralPriceBelowThreshold();
     error CollateralTokenAlreadyAdded();
+    error YieldSourceAlreadyAdded();
     error CollateralTokenNotAdded();
+    error YieldSourceNotAdded();
     error InvalidRedeemRequest();
     error RequestNotFinalized();
+    error TokensStillInYieldSource();
+    error CallNotSuccessful();
+    error MaxCapReached();
+    error CannotRescueWhitelistedTokens();
 
     event YoCoinMinted(address to, uint256 amount);
 }

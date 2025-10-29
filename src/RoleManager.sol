@@ -4,6 +4,14 @@ pragma solidity ^0.8.20;
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {IRoleManager} from "./interfaces/IRoleManager.sol";
 
+/*
+██╗   ██╗  ██████╗  ██████╗ ██████╗ ██╗███╗   ██╗
+██║   ██║ ██╔═══██╗██╔════ ╗██╔══██╗██║████╗  ██║
+╚ ████╔╝║ ██║   ██║██║     ║██║  ██║██║██╔██╗ ██║
+╚ ████╔╝  ██║   ██║██║     ║██║  ██║██║██║╚██╗██║
+ ╚████╔╝  ╚██████╔╝╚██████╔╝██████╔╝██║██║ ╚████║
+  ╚═══╝    ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝
+*/
 contract RoleManager is IRoleManager, Ownable {
 
     /// @notice Entity -> Role -> hasRole

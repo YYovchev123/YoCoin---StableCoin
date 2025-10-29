@@ -12,6 +12,7 @@ interface IRoleManager {
     error InsufficientRole();
     error AlreadyHasRole();
     error DoesNotHaveRole();
+    error OnlyYoCoinCore();
     error NotMinter();
     error NotBurner();
     error NotAdmin();

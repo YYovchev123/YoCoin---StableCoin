@@ -3,4 +3,14 @@ pragma solidity ^0.8.20;
 
 import {IYoStrategyManager} from "./interfaces/IYoStrategyManager.sol";
 
-contract YoStrategyManager is IYoStrategyManager {}
+/*
+██╗   ██╗  ██████╗  ██████╗ ██████╗ ██╗███╗   ██╗
+██║   ██║ ██╔═══██╗██╔════ ╗██╔══██╗██║████╗  ██║
+╚ ████╔╝║ ██║   ██║██║     ║██║  ██║██║██╔██╗ ██║
+╚ ████╔╝  ██║   ██║██║     ║██║  ██║██║██║╚██╗██║
+ ╚████╔╝  ╚██████╔╝╚██████╔╝██████╔╝██║██║ ╚████║
+  ╚═══╝    ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝
+*/
+contract YoStrategyManager is IYoStrategyManager {
+    
+}

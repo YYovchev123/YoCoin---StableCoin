@@ -4,6 +4,14 @@ pragma solidity ^0.8.20;
 import {IYoOracle} from "./interfaces/IYoOracle.sol";
 import {IPriceFeed} from "./interfaces/IPriceFeed.sol";
 
+/*
+██╗   ██╗  ██████╗  ██████╗ ██████╗ ██╗███╗   ██╗
+██║   ██║ ██╔═══██╗██╔════ ╗██╔══██╗██║████╗  ██║
+╚ ████╔╝║ ██║   ██║██║     ║██║  ██║██║██╔██╗ ██║
+╚ ████╔╝  ██║   ██║██║     ║██║  ██║██║██║╚██╗██║
+ ╚████╔╝  ╚██████╔╝╚██████╔╝██████╔╝██║██║ ╚████║
+  ╚═══╝    ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝
+*/
 contract YoOracle is IYoOracle {
 
     /**
